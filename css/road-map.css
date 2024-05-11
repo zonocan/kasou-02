@@ -1,0 +1,75 @@
+body {
+    max-height: 100svh;
+}
+
+.roadmap-content {
+    position: relative;
+    /* height: 90svh; */
+    background: linear-gradient(45deg, var(--g-color-01), var(--g-color-02));
+    margin-bottom: 0!important;
+    z-index: -10;
+}
+
+.roadmap-content .inner {
+    margin-top: var(--main-sp-mb-pb-01);
+    padding-top: var(--main-sp-mb-pb-02);
+    justify-content: space-between;
+}
+
+.senter-line {
+    position: fixed;
+    height: 100svh;
+    width: 3px;
+    top: 75px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: var(--g-color-01);
+    z-index: -1;
+}
+
+.box-wrapper {
+    width: 45.5%;
+}
+
+@media screen  and (min-width: 960px) {
+ 
+    .roadmap-content .inner  {
+        width: 75%;
+    }    
+    .box-wrapper {
+        width: 30%;
+    }
+}
+
+.box-wrapper ul{
+    background-color: var(--color-02);
+    padding: 15px 10px;    
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin-bottom: var(--main-sp-mb-pb-01);
+}
+
+.box-wrapper ul::before {
+    content: '';
+    position: absolute;
+    background-color: var(--color-01);
+    height: 10px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.box-wrapper ul li {
+    color: var(--color-01);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.right-side {
+    margin-top: var(--main-sp-mb-pb-01);
+}
