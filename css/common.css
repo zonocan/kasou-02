@@ -76,6 +76,14 @@ a {
     flex-wrap: wrap;
 }
 
+.pc-d-none {
+    display: block;
+}
+
+.sp-d-none {
+    display: none;
+}
+
 .inner {
     width: 95%;
     margin: 0 auto;
@@ -112,7 +120,7 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
-    transition: .2s;      
+    transition: .2s;   
 }
 
 header.s-active {
